@@ -1,1 +1,1 @@
-This is a script that search new posts from users that contain some needed text
+All documentation about how to use it you can find in the main script. To avoid any errors please change all data in the script and install all requirements from requirements.txt file, using pip install -r requirements.txt
