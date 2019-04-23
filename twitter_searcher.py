@@ -8,10 +8,11 @@ class Searcher:
         
         """ 
         Warning! You should pass links like mobile.twitter.com/name_of_account to the function for proper work
-        Function that search new posts that meet criterias in twitter through web scraping and if something found call the function write_sqlite to add new records
+        Function that search new posts that meet criterias in twitter through web scraping and if something 
+        found call the function write_sqlite to add new records
          """
         for x in links_list:
-            html = requests.get(x).text # TODO
+            html = requests.get(x).text
             soup = BeautifulSoup(html, 'lxml')
             tweet_text_soup = soup('div', class_='dir-ltr') # soup with text of all tweets
             tweet_inf_soup = soup('td', class_='timestamp') # soup with date and link of all tweets
